@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FC71AA16964E76D03402B4 /* KeyboardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D38475C7377CA67BC7F917A /* KeyboardState.swift */; };
+		125FC26B5C84809800628F0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA2EDF83DAFCCDBF723D6A /* ContentView.swift */; };
+		6C3AF9F2BEB767F3EADD659D /* ArmenianKeyboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E717FB2C095E47ECCE1A86B5 /* ArmenianKeyboardApp.swift */; };
+		73A0432679DF104E96473868 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789BF8490634F04E02FF49F8 /* KeyboardView.swift */; };
+		75B3C7162D01A2636C5A2EB2 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F10EFBD86498AEA75AA8EE /* KeyboardViewController.swift */; };
+		A98E59C144E87184B468112E /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53F6BAF03EE8AAE91E046D /* Layouts.swift */; };
+		CD6AD1F57AE579857FF16CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5EB22EDC89CF02D779A447 /* Assets.xcassets */; };
+		EF67E3182FFBEB0E35C45BCE /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8EB1CF8F1D5E83EA9A4A91DF /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDB0ED1E769C703AE3CE43A9 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C401FB7A448987034B091DE1 /* KeyboardLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5D7942794FCE69A4CDA918B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDCD467FBF6279015BC4F620 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8B5E9E6430B3E7EC44ECB59;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAFB03A4B06A0456F5CBEF57 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF67E3182FFBEB0E35C45BCE /* Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B53F6BAF03EE8AAE91E046D /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		1F5EB22EDC89CF02D779A447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D38475C7377CA67BC7F917A /* KeyboardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardState.swift; sourceTree = "<group>"; };
+		548729DFD26FAC15B11C10B2 /* ArmenianKeyboard.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ArmenianKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB0E24DB66EC4A99350ECC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		789BF8490634F04E02FF49F8 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		8AEA2EDF83DAFCCDBF723D6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8EB1CF8F1D5E83EA9A4A91DF /* Keyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F10EFBD86498AEA75AA8EE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		C401FB7A448987034B091DE1 /* KeyboardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
+		E717FB2C095E47ECCE1A86B5 /* ArmenianKeyboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmenianKeyboardApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3B9897FA7201B286C0D1D007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				548729DFD26FAC15B11C10B2 /* ArmenianKeyboard.app */,
+				8EB1CF8F1D5E83EA9A4A91DF /* Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BEEF75D0D2768D7A5A16C43 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6EB0E24DB66EC4A99350ECC0 /* Info.plist */,
+				C401FB7A448987034B091DE1 /* KeyboardLayout.swift */,
+				2D38475C7377CA67BC7F917A /* KeyboardState.swift */,
+				789BF8490634F04E02FF49F8 /* KeyboardView.swift */,
+				B2F10EFBD86498AEA75AA8EE /* KeyboardViewController.swift */,
+				8518030CBAC314113F0DACCF /* Generated */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		8518030CBAC314113F0DACCF /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				0B53F6BAF03EE8AAE91E046D /* Layouts.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		86727E509034E98B72DAA908 = {
+			isa = PBXGroup;
+			children = (
+				952459E3DE4F9B09512F43DE /* App */,
+				3BEEF75D0D2768D7A5A16C43 /* Keyboard */,
+				3B9897FA7201B286C0D1D007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		952459E3DE4F9B09512F43DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E717FB2C095E47ECCE1A86B5 /* ArmenianKeyboardApp.swift */,
+				1F5EB22EDC89CF02D779A447 /* Assets.xcassets */,
+				8AEA2EDF83DAFCCDBF723D6A /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		083CA833A4D55FF9E24E09BA /* ArmenianKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3138095EF306DD048A7F3B /* Build configuration list for PBXNativeTarget "ArmenianKeyboard" */;
+			buildPhases = (
+				5F49718690D079C20A0C8EF0 /* Sources */,
+				DE21B28180460E21D022110E /* Resources */,
+				FAFB03A4B06A0456F5CBEF57 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0E5944131B6B3D3CA925963 /* PBXTargetDependency */,
+			);
+			name = ArmenianKeyboard;
+			packageProductDependencies = (
+			);
+			productName = ArmenianKeyboard;
+			productReference = 548729DFD26FAC15B11C10B2 /* ArmenianKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8B5E9E6430B3E7EC44ECB59 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427BF5E8356AED661A2C77EA /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				D14CE6E0A57842D94FAE1C73 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			packageProductDependencies = (
+			);
+			productName = Keyboard;
+			productReference = 8EB1CF8F1D5E83EA9A4A91DF /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDCD467FBF6279015BC4F620 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					083CA833A4D55FF9E24E09BA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					C8B5E9E6430B3E7EC44ECB59 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D67092FCB0FB2AD9010475D3 /* Build configuration list for PBXProject "ArmenianKeyboard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 86727E509034E98B72DAA908;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3B9897FA7201B286C0D1D007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				083CA833A4D55FF9E24E09BA /* ArmenianKeyboard */,
+				C8B5E9E6430B3E7EC44ECB59 /* Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE21B28180460E21D022110E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD6AD1F57AE579857FF16CD3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F49718690D079C20A0C8EF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3AF9F2BEB767F3EADD659D /* ArmenianKeyboardApp.swift in Sources */,
+				125FC26B5C84809800628F0B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14CE6E0A57842D94FAE1C73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB0ED1E769C703AE3CE43A9 /* KeyboardLayout.swift in Sources */,
+				04FC71AA16964E76D03402B4 /* KeyboardState.swift in Sources */,
+				73A0432679DF104E96473868 /* KeyboardView.swift in Sources */,
+				75B3C7162D01A2636C5A2EB2 /* KeyboardViewController.swift in Sources */,
+				A98E59C144E87184B468112E /* Layouts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0E5944131B6B3D3CA925963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8B5E9E6430B3E7EC44ECB59 /* Keyboard */;
+			targetProxy = A5D7942794FCE69A4CDA918B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B866B86525F560C735D99BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.aramp.armeniankeyboard.keyboard;
+				PRODUCT_NAME = Keyboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A24859A7CF39054ADF422A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9D5EF9DA8089DB60643D55FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.aramp.armeniankeyboard.keyboard;
+				PRODUCT_NAME = Keyboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B28B7EF1966CD288483E1844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Հայերեն";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.aramp.armeniankeyboard;
+				PRODUCT_NAME = "Armenian Keyboard";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8FD391AF01AF69A7A8580E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F4C9FE08370900A8A92CD12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Հայերեն";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.aramp.armeniankeyboard;
+				PRODUCT_NAME = "Armenian Keyboard";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427BF5E8356AED661A2C77EA /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B866B86525F560C735D99BD /* Debug */,
+				9D5EF9DA8089DB60643D55FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB3138095EF306DD048A7F3B /* Build configuration list for PBXNativeTarget "ArmenianKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4C9FE08370900A8A92CD12B /* Debug */,
+				B28B7EF1966CD288483E1844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D67092FCB0FB2AD9010475D3 /* Build configuration list for PBXProject "ArmenianKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A24859A7CF39054ADF422A2 /* Debug */,
+				C8FD391AF01AF69A7A8580E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDCD467FBF6279015BC4F620 /* Project object */;
+}

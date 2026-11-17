@@ -1,0 +1,345 @@
+[
+ {
+  "id": "armenian-phonetic",
+  "name": "Armenian Phonetic Plus",
+  "rows": [
+   [
+    {
+     "key": "`",
+     "plain": "՝",
+     "shift": "՜",
+     "option": "`",
+     "option_shift": "~"
+    },
+    {
+     "key": "1",
+     "plain": "է",
+     "shift": "Է",
+     "option": "1",
+     "option_shift": "!"
+    },
+    {
+     "key": "2",
+     "plain": "թ",
+     "shift": "Թ",
+     "option": "2",
+     "option_shift": "@"
+    },
+    {
+     "key": "3",
+     "plain": "փ",
+     "shift": "Փ",
+     "option": "3",
+     "option_shift": "#"
+    },
+    {
+     "key": "4",
+     "plain": "ձ",
+     "shift": "Ձ",
+     "option": "4",
+     "option_shift": "$"
+    },
+    {
+     "key": "5",
+     "plain": "ջ",
+     "shift": "Ջ",
+     "option": "5",
+     "option_shift": "%"
+    },
+    {
+     "key": "6",
+     "plain": "ւ",
+     "shift": "Ւ",
+     "option": "6",
+     "option_shift": "^"
+    },
+    {
+     "key": "7",
+     "plain": "և",
+     "shift": "Եվ",
+     "option": "7",
+     "option_shift": "&"
+    },
+    {
+     "key": "8",
+     "plain": "ր",
+     "shift": "Ր",
+     "option": "8",
+     "option_shift": "*"
+    },
+    {
+     "key": "9",
+     "plain": "չ",
+     "shift": "Չ",
+     "option": "9",
+     "option_shift": "("
+    },
+    {
+     "key": "0",
+     "plain": "ճ",
+     "shift": "Ճ",
+     "option": "0",
+     "option_shift": ")"
+    },
+    {
+     "key": "-",
+     "plain": "-",
+     "shift": "—",
+     "option": "-",
+     "option_shift": "_"
+    },
+    {
+     "key": "=",
+     "plain": "ժ",
+     "shift": "Ժ",
+     "option": "=",
+     "option_shift": "+"
+    }
+   ],
+   [
+    {
+     "key": "q",
+     "plain": "ք",
+     "shift": "Ք",
+     "option": "q",
+     "option_shift": "Q"
+    },
+    {
+     "key": "w",
+     "plain": "ո",
+     "shift": "Ո",
+     "option": "w",
+     "option_shift": "W"
+    },
+    {
+     "key": "e",
+     "plain": "ե",
+     "shift": "Ե",
+     "option": "e",
+     "option_shift": "E"
+    },
+    {
+     "key": "r",
+     "plain": "ռ",
+     "shift": "Ռ",
+     "option": "r",
+     "option_shift": "R"
+    },
+    {
+     "key": "t",
+     "plain": "տ",
+     "shift": "Տ",
+     "option": "t",
+     "option_shift": "T"
+    },
+    {
+     "key": "y",
+     "plain": "ը",
+     "shift": "Ը",
+     "option": "y",
+     "option_shift": "Y"
+    },
+    {
+     "key": "u",
+     "plain": "ւ",
+     "shift": "Ւ",
+     "option": "u",
+     "option_shift": "U"
+    },
+    {
+     "key": "i",
+     "plain": "ի",
+     "shift": "Ի",
+     "option": "i",
+     "option_shift": "I"
+    },
+    {
+     "key": "o",
+     "plain": "օ",
+     "shift": "Օ",
+     "option": "o",
+     "option_shift": "O"
+    },
+    {
+     "key": "p",
+     "plain": "պ",
+     "shift": "Պ",
+     "option": "p",
+     "option_shift": "P"
+    },
+    {
+     "key": "[",
+     "plain": "խ",
+     "shift": "Խ",
+     "option": "[",
+     "option_shift": "{"
+    },
+    {
+     "key": "]",
+     "plain": "ծ",
+     "shift": "Ծ",
+     "option": "]",
+     "option_shift": "}"
+    },
+    {
+     "key": "\\",
+     "plain": "շ",
+     "shift": "Շ",
+     "option": "\\",
+     "option_shift": "|"
+    }
+   ],
+   [
+    {
+     "key": "a",
+     "plain": "ա",
+     "shift": "Ա",
+     "option": "a",
+     "option_shift": "A"
+    },
+    {
+     "key": "s",
+     "plain": "ս",
+     "shift": "Ս",
+     "option": "s",
+     "option_shift": "S"
+    },
+    {
+     "key": "d",
+     "plain": "դ",
+     "shift": "Դ",
+     "option": "d",
+     "option_shift": "D"
+    },
+    {
+     "key": "f",
+     "plain": "ֆ",
+     "shift": "Ֆ",
+     "option": "f",
+     "option_shift": "F"
+    },
+    {
+     "key": "g",
+     "plain": "գ",
+     "shift": "Գ",
+     "option": "g",
+     "option_shift": "G"
+    },
+    {
+     "key": "h",
+     "plain": "հ",
+     "shift": "Հ",
+     "option": "h",
+     "option_shift": "H"
+    },
+    {
+     "key": "j",
+     "plain": "յ",
+     "shift": "Յ",
+     "option": "j",
+     "option_shift": "J"
+    },
+    {
+     "key": "k",
+     "plain": "կ",
+     "shift": "Կ",
+     "option": "k",
+     "option_shift": "K"
+    },
+    {
+     "key": "l",
+     "plain": "լ",
+     "shift": "Լ",
+     "option": "l",
+     "option_shift": "L"
+    },
+    {
+     "key": ";",
+     "plain": ";",
+     "shift": ".",
+     "option": ";",
+     "option_shift": ":"
+    },
+    {
+     "key": "'",
+     "plain": "՛",
+     "shift": "\"",
+     "option": "'",
+     "option_shift": "\""
+    }
+   ],
+   [
+    {
+     "key": "z",
+     "plain": "զ",
+     "shift": "Զ",
+     "option": "z",
+     "option_shift": "Z"
+    },
+    {
+     "key": "x",
+     "plain": "ղ",
+     "shift": "Ղ",
+     "option": "x",
+     "option_shift": "X"
+    },
+    {
+     "key": "c",
+     "plain": "ց",
+     "shift": "Ց",
+     "option": "c",
+     "option_shift": "C"
+    },
+    {
+     "key": "v",
+     "plain": "վ",
+     "shift": "Վ",
+     "option": "v",
+     "option_shift": "V"
+    },
+    {
+     "key": "b",
+     "plain": "բ",
+     "shift": "Բ",
+     "option": "b",
+     "option_shift": "B"
+    },
+    {
+     "key": "n",
+     "plain": "ն",
+     "shift": "Ն",
+     "option": "n",
+     "option_shift": "N"
+    },
+    {
+     "key": "m",
+     "plain": "մ",
+     "shift": "Մ",
+     "option": "m",
+     "option_shift": "M"
+    },
+    {
+     "key": ",",
+     "plain": ",",
+     "shift": "«",
+     "option": ",",
+     "option_shift": "<"
+    },
+    {
+     "key": ".",
+     "plain": "։",
+     "shift": "»",
+     "option": ".",
+     "option_shift": ">"
+    },
+    {
+     "key": "/",
+     "plain": "/",
+     "shift": "՞",
+     "option": "/",
+     "option_shift": "?"
+    }
+   ]
+  ]
+ }
+]

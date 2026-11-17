@@ -1,0 +1,102 @@
+# Armenian Phonetic — the single source of truth for every platform.
+#
+# `tools/build.py` reads every *.toml file in this folder and generates
+# the macOS .keylayout, the iOS key grid and the website's layout data.
+# To add a layout (e.g. Russian phonetic), copy this file and change it.
+#
+# Keys are named by the US QWERTY key they sit on. Each entry is
+# [plain, shift]. Caps Lock uppercases letters only; punctuation keys
+# keep their plain output. See docs/layout.md for why each key is where it is.
+
+id = "armenian-phonetic"
+name = "Armenian Phonetic Plus"
+short_name = "Հայ"
+language = "hy"
+# Option and Option+Shift give the standard US English layer, so every
+# Latin letter, digit and ASCII symbol stays one modifier away.
+option_layer = "us"
+
+[keys]
+"`" = ["՝", "՜"]
+"1" = ["է", "Է"]
+"2" = ["թ", "Թ"]
+"3" = ["փ", "Փ"]
+"4" = ["ձ", "Ձ"]
+"5" = ["ջ", "Ջ"]
+"6" = ["ւ", "Ւ"]
+"7" = ["և", "Եվ"]
+"8" = ["ր", "Ր"]
+"9" = ["չ", "Չ"]
+"0" = ["ճ", "Ճ"]
+"-" = ["-", "—"]
+"=" = ["ժ", "Ժ"]
+
+"q" = ["ք", "Ք"]
+"w" = ["ո", "Ո"]
+"e" = ["ե", "Ե"]
+"r" = ["ռ", "Ռ"]
+"t" = ["տ", "Տ"]
+"y" = ["ը", "Ը"]
+"u" = ["ւ", "Ւ"]
+"i" = ["ի", "Ի"]
+"o" = ["օ", "Օ"]
+"p" = ["պ", "Պ"]
+"[" = ["խ", "Խ"]
+"]" = ["ծ", "Ծ"]
+"\\" = ["շ", "Շ"]
+
+"a" = ["ա", "Ա"]
+"s" = ["ս", "Ս"]
+"d" = ["դ", "Դ"]
+"f" = ["ֆ", "Ֆ"]
+"g" = ["գ", "Գ"]
+"h" = ["հ", "Հ"]
+"j" = ["յ", "Յ"]
+"k" = ["կ", "Կ"]
+"l" = ["լ", "Լ"]
+";" = [";", "."]
+"'" = ["՛", "\""]
+
+"z" = ["զ", "Զ"]
+"x" = ["ղ", "Ղ"]
+"c" = ["ց", "Ց"]
+"v" = ["վ", "Վ"]
+"b" = ["բ", "Բ"]
+"n" = ["ն", "Ն"]
+"m" = ["մ", "Մ"]
+"," = [",", "«"]
+"." = ["։", "»"]
+"/" = ["/", "՞"]
+
+# Caps Lock output where it differs from "shift for letters, plain for the rest".
+[caps]
+"7" = "ԵՎ"
+
+# Touch keyboard (iPhone). Rows of the letter page, by key name.
+[touch]
+letter_rows = [
+  ["1", "2", "3", "4", "5", "7", "8", "9", "0", "="],
+  ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "["],
+  ["a", "s", "d", "f", "g", "h", "j", "k", "l", "]"],
+  ["z", "x", "c", "v", "b", "n", "m", "\\"],
+]
+# Text on the space bar.
+space_label = "Հայերեն"
+# Characters on the keys either side of the space bar on the letter page.
+space_left = ","
+space_right = "։"
+# Sentence end inserted by a double space.
+double_space = "։ "
+# Characters after which the next letter is capitalised.
+sentence_enders = ["։", "՞", "՜", ".", "?", "!"]
+# Numbers and punctuation page: Armenian punctuation first.
+symbol_rows = [
+  ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+  ["։", "՝", "՛", "՞", "՜", "«", "»", "և", "֊", "֏"],
+  [".", ",", "?", "!", "-", ":", ";", "\"", "'"],
+]
+more_symbol_rows = [
+  ["(", ")", "[", "]", "{", "}", "#", "%", "*", "+"],
+  ["=", "_", "/", "\\", "|", "~", "<", ">", "@", "&"],
+  ["—", "…", "$", "€", "₽", "՚", "՟", "№"],
+]

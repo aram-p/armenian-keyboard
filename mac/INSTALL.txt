@@ -1,0 +1,13 @@
+Armenian Phonetic Plus — install on a Mac
+
+1. Open Finder, press Shift-Command-G, and go to:  ~/Library/Keyboard Layouts
+   (create the "Keyboard Layouts" folder if it is not there).
+2. Drag "ArmenianKeyboard.bundle" into that folder.
+3. Log out and back in (macOS only notices new layouts at login).
+4. System Settings → Keyboard → Text Input → Edit… → + → Armenian →
+   "Armenian Phonetic Plus" → Add.
+
+Or, in Terminal, one line:
+  curl -fsSL https://aram-p.github.io/armenian-keyboard/install.sh | sh
+
+Layout: https://aram-p.github.io/armenian-keyboard/layout

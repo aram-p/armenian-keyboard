@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armenian Keyboard</title>
+<meta name="description" content="A free Armenian phonetic keyboard for Mac and iPhone, with the Armenian punctuation where you expect it.">
+<link rel="icon" href="icon.png">
+<style>
+:root {
+  --bg: #fbfaf8; --fg: #1d1d1f; --muted: #6e6e73; --card: #fff; --line: #e5e3df;
+  --accent: #c8102e; --accent2: #f2a541; --key: #fff; --keyline: #d6d3ce; --alt: #8a5a00;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141414; --fg: #f2f2f2; --muted: #a1a1a6; --card: #1e1e1e; --line: #2f2f2f;
+          --key: #2a2a2a; --keyline: #3a3a3a; --alt: #f2a541; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Armenian", sans-serif; }
+main { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; gap: 18px; align-items: center; margin-bottom: 8px; }
+header img { width: 72px; height: 72px; border-radius: 16px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0; }
+.lead { color: var(--muted); font-size: 19px; margin: 6px 0 28px; }
+h2 { font-size: 24px; margin: 48px 0 12px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 8px; }
+.btn { display: inline-flex; flex-direction: column; padding: 12px 18px; border-radius: 12px;
+  text-decoration: none; color: #fff; background: var(--accent); min-width: 200px; }
+.btn small { opacity: .85; font-size: 13px; }
+.btn.secondary { background: var(--card); color: var(--fg); border: 1px solid var(--line); }
+.btn.disabled { opacity: .6; pointer-events: none; }
+code, pre { font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; }
+pre { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+  overflow-x: auto; white-space: pre; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; }
+.card h3 { margin: 0 0 8px; font-size: 18px; }
+.card ol, .card ul { margin: 0; padding-left: 20px; }
+.kbd-wrap { overflow-x: auto; padding-bottom: 6px; }
+.kbd { display: grid; gap: 6px; min-width: 720px; }
+.row { display: flex; gap: 6px; }
+.key { flex: 0 0 auto; width: 50px; height: 56px; border: 1px solid var(--keyline); border-radius: 8px;
+  background: var(--key); position: relative; box-shadow: 0 1px 0 var(--keyline); }
+.key .main { position: absolute; left: 7px; bottom: 5px; font-size: 21px; line-height: 1; }
+.key .shift { position: absolute; left: 7px; top: 5px; font-size: 13px; color: var(--muted); }
+.key .latin { position: absolute; right: 6px; bottom: 5px; font-size: 11px; color: var(--alt); }
+.key.punct { background: color-mix(in srgb, var(--accent2) 22%, var(--key)); }
+.key.wide-1 { width: 74px; } .key.wide-2 { width: 88px; } .key.wide-3 { width: 112px; }
+.legend { color: var(--muted); font-size: 14px; margin-top: 10px; }
+table { border-collapse: collapse; width: 100%; font-size: 16px; }
+td, th { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 14px; }
+td.big { font-size: 22px; }
+.phone { max-width: 320px; border-radius: 28px; border: 1px solid var(--line); display: block; }
+footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+@media (max-width: 600px) { h1 { font-size: 28px; } .btn { min-width: 0; flex: 1 1 100%; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <h1>Armenian Keyboard</h1>
+  </div>
+</header>
+<p class="lead">A free Armenian phonetic keyboard for Mac and iPhone. Letters sit on the English keys that sound the same, and the Armenian punctuation — ։ ՝ ՛ ՞ ՜ « » և — is one key away instead of buried.</p>
+
+<div class="buttons">
+  <a class="btn" href="https://github.com/aram-p/armenian-keyboard/releases/latest/download/ArmenianKeyboard-mac.pkg">Download for Mac<small>Installer (.pkg)</small></a>
+  <a class="btn secondary" href="https://github.com/aram-p/armenian-keyboard/releases/latest/download/ArmenianKeyboard-mac.zip">Mac, without installer<small>.zip with the layout bundle</small></a>
+  <a class="btn secondary disabled" href="#iphone">iPhone<small>App Store — coming soon</small></a>
+</div>
+
+<h2 id="layout">The layout</h2>
+<div class="kbd-wrap"><div class="kbd" id="kbd" aria-label="Keyboard layout picture"></div></div>
+<p class="legend">Big: the key on its own · small grey: with Shift · small orange: with Option (Mac), which always types English. Highlighted keys are punctuation. <a href="layout">Why each key is where it is →</a></p>
+
+<h2>Punctuation where you expect it</h2>
+<table>
+  <tr><th>Mark</th><th>What it is</th><th>Key</th></tr>
+  <tr><td class="big">։</td><td>Full stop (verjaket)</td><td><b>.</b> — no Shift</td></tr>
+  <tr><td class="big">՝</td><td>But / pause</td><td><b>`</b></td></tr>
+  <tr><td class="big">՛</td><td>Emphasis</td><td><b>'</b></td></tr>
+  <tr><td class="big">՞</td><td>Question</td><td><b>Shift /</b></td></tr>
+  <tr><td class="big">՜</td><td>Exclamation</td><td><b>Shift `</b></td></tr>
+  <tr><td class="big">« »</td><td>Quotes</td><td><b>Shift ,</b> and <b>Shift .</b></td></tr>
+  <tr><td class="big">և</td><td>Yev</td><td><b>7</b> (Shift 7 → Եվ)</td></tr>
+</table>
+<p class="legend">Letters follow the Windows “Armenian Phonetic” layout, so if you type Armenian on Windows you already know this one.</p>
+
+<h2>Install on a Mac</h2>
+<div class="grid">
+  <div class="card">
+    <h3>With the installer</h3>
+    <ol>
+      <li>Download the <b>.pkg</b> and open it. If macOS says it can't check it, open <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b>.</li>
+      <li><b>Log out and back in.</b></li>
+      <li><b>System Settings → Keyboard → Text Input → Edit… → +</b>, pick <b>Armenian → Armenian Phonetic Plus</b>.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h3>With one line in Terminal</h3>
+    <pre>curl -fsSL https://aram-p.github.io/armenian-keyboard/install.sh | sh</pre>
+    <p>Then log out and back in, and add it in System Settings as on the left. No password needed: it installs for your user only.</p>
+  </div>
+</div>
+
+<h2 id="iphone">iPhone</h2>
+<div class="grid">
+  <div class="card">
+    <p>Same letters in the same places, with a numbers page that puts Armenian punctuation first, ։ next to the space bar, and a double space that ends the sentence with ։.</p>
+    <p>It does not ask for Full Access and collects nothing.</p>
+    <p><b>App Store release is on the way.</b> Developers can build it now from <a href="https://github.com/aram-p/armenian-keyboard/tree/main/ios">the ios folder</a>.</p>
+  </div>
+  <img class="phone" src="iphone-keyboard.png" alt="The Armenian keyboard on an iPhone">
+</div>
+
+<footer>
+  Free and open source (MIT). <a href="https://github.com/aram-p/armenian-keyboard">Source on GitHub</a> · <a href="https://github.com/aram-p/armenian-keyboard/issues">Report a problem</a>
+</footer>
+</main>
+<script>
+const PUNCT = new Set(["։","՝","՛","՞","՜","«","»","—",",",";","/","-",".","\""]);
+const WIDE = { "\\": "wide-1" };
+fetch("layouts.json").then(r => r.json()).then(layouts => {
+  const kbd = document.getElementById("kbd");
+  const indent = ["", "wide-1", "wide-2", "wide-3"];
+  layouts[0].rows.forEach((row, i) => {
+    const el = document.createElement("div");
+    el.className = "row";
+    if (i > 0) { const pad = document.createElement("div"); pad.className = "key " + indent[i]; pad.style.visibility = "hidden"; el.append(pad); }
+    for (const k of row) {
+      const key = document.createElement("div");
+      key.className = "key" + (PUNCT.has(k.plain) || PUNCT.has(k.shift) ? " punct" : "") + (WIDE[k.key] ? " " + WIDE[k.key] : "");
+      const showShift = k.shift !== k.plain.toUpperCase();
+      key.innerHTML = `${showShift ? `<span class="shift"></span>` : ""}<span class="main"></span><span class="latin"></span>`;
+      key.querySelector(".main").textContent = k.plain;
+      if (showShift) key.querySelector(".shift").textContent = k.shift;
+      key.querySelector(".latin").textContent = k.option;
+      key.title = `${k.key}: ${k.plain}  ·  Shift: ${k.shift}  ·  Option: ${k.option} ${k.option_shift}`;
+      el.append(key);
+    }
+    kbd.append(el);
+  });
+});
+</script>
+</body>
+</html>
