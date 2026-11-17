@@ -69,7 +69,7 @@ struct KeyboardView: View {
             let side = sideKeyWidth(letters: last.count, unit: unit, width: width)
             HStack(spacing: KeyboardMetrics.keySpacing) {
                 KeyButton(style: .special, action: { state.page = switchTo }) {
-                    Text(switchLabel).font(.system(size: 16))
+                    Text(switchLabel).font(.system(size: 15)).lineLimit(1).minimumScaleFactor(0.6)
                 }
                 .frame(width: side)
                 Spacer(minLength: 0)
@@ -108,7 +108,7 @@ struct KeyboardView: View {
             }
             .frame(width: 80)
         }
-        .frame(height: KeyboardMetrics.keyHeight)
+        .frame(maxHeight: .infinity)
     }
 
     // MARK: Keys
@@ -146,8 +146,9 @@ struct KeyboardView: View {
 
     private func sideKeyWidth(letters: Int, unit: CGFloat, width: CGFloat) -> CGFloat {
         let inner = width - 2 * KeyboardMetrics.sideMargin
-        let used = CGFloat(letters) * unit + CGFloat(letters + 1) * KeyboardMetrics.keySpacing
-        return max(unit, min(unit * 1.6, (inner - used) / 2 - 4))
+        // Two side keys, two spacers and the keys between them: letters + 3 gaps.
+        let used = CGFloat(letters) * unit + CGFloat(letters + 3) * KeyboardMetrics.keySpacing
+        return min(unit * 1.6, (inner - used) / 2)
     }
 }
 
@@ -181,7 +182,7 @@ struct KeyButton<Label: View>: View {
                     .fill(fill)
                     .shadow(color: .black.opacity(scheme == .dark ? 0 : 0.3), radius: 0, x: 0, y: 1)
             )
-            .frame(height: KeyboardMetrics.keyHeight)
+            .frame(maxHeight: .infinity)
             .contentShape(Rectangle())
             .gesture(
                 DragGesture(minimumDistance: 0)
